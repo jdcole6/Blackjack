@@ -7,4 +7,6 @@ public class Hand extends Card {
     public Hand() {
 
     }
+
+
 }

@@ -4,10 +4,6 @@ public class Deck extends Card {
 
     public final int DECK_SIZE = 52;
 
-    public enum Suit {
-        CLUBS, SPADES, DIAMONDS, HEARTS
-    }
-
     public Deck() {
         createDeck();
     }
