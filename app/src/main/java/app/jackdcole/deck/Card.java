@@ -4,30 +4,22 @@ public class Card {
 
     public int number;
 
-    public String suit;
+    public Suit suit;
 
     public Card() {
         // default constructor
     }
 
-    public Card(int number, String suit) {
+    public Card(int number, Suit suit) {
         this.number = number;
         this.suit = suit;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
     }
 
     public int getNumber() {
         return number;
     }
 
-    public void setSuit(String suit) {
-        this.suit = suit;
-    }
-
-    public String getSuit() {
+    public Suit getSuit() {
         return suit;
     }
 }
