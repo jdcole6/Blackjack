@@ -1,9 +1,13 @@
 package app.jackdcole.controller;
 
+import app.jackdcole.deck.Hand;
+
 public class DealerController implements Moves {
 
-    public DealerController() {
+    public Hand dealerHand;
 
+    public DealerController() {
+        dealerHand = new Hand();
     }
 
     @Override

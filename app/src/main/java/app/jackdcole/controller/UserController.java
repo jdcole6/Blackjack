@@ -1,9 +1,13 @@
 package app.jackdcole.controller;
 
+import app.jackdcole.deck.Hand;
+
 public class UserController implements Moves {
 
-    public UserController() {
+    public Hand userHand;
 
+    public UserController() {
+        userHand = new Hand();
     }
 
     @Override
