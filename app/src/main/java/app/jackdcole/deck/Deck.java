@@ -15,7 +15,7 @@ public class Deck extends Card {
         createDeck();
     }
 
-    public ArrayList<Card> createDeck() {
+    private ArrayList<Card> createDeck() {
         for (int i = 0; i < DECK_SIZE; i++) {
             int number = 0;
             Suit suit = Suit.CLUBS;
@@ -54,8 +54,7 @@ public class Deck extends Card {
     }
 
     public Card removeCard() {
-        Card next = deck.remove(0);
-        return next;
+        return deck.remove(0);
     }
 
     public void addCard(Card card) {

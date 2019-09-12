@@ -1,5 +1,6 @@
 package app.jackdcole.controller;
 
+import app.jackdcole.deck.Deck;
 import app.jackdcole.deck.Hand;
 
 public class UserController implements Moves {
@@ -10,14 +11,36 @@ public class UserController implements Moves {
         userHand = new Hand();
     }
 
-    @Override
-    public void stand() {
+    public void userLogic(Deck deck) {
+        if (userHand.getSize() < 2) {
+            userHand.addCard(deck.removeCard());
+        } else {
+            boolean temp = true;
 
+            if (temp) {
+                stand();
+            } else if (temp) {
+                hit(deck);
+            } else if (temp) {
+                doubleDown();
+            } else if (temp) {
+                split();
+            } else if (temp) {
+                surrender();
+            } else {
+                // try again
+            }
+        }
     }
 
     @Override
-    public void hit() {
+    public void stand() {
+        // advance turn
+    }
 
+    @Override
+    public void hit(Deck deck) {
+        userHand.addCard(deck.removeCard());
     }
 
     @Override
@@ -32,6 +55,10 @@ public class UserController implements Moves {
 
     @Override
     public void surrender() {
+        // end turn
+    }
 
+    public Hand getHand() {
+        return userHand;
     }
 }

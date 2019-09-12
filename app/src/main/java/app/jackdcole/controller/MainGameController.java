@@ -1,12 +1,18 @@
 package app.jackdcole.controller;
 
+import app.jackdcole.deck.Deck;
+import app.jackdcole.deck.Hand;
+
 public class MainGameController {
 
     public DealerController dealer;
 
     public UserController user;
 
+    public Deck deck;
+
     public MainGameController() {
+        deck = new Deck();
         dealer = new DealerController();
         user = new UserController();
 
@@ -19,11 +25,11 @@ public class MainGameController {
     }
 
     public void userTurn() {
-
+        user.userLogic(deck);
     }
 
     public void dealerTurn() {
-
+        dealer.dealerLogic(deck);
     }
 
 }

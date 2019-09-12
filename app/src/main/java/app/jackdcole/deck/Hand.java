@@ -21,4 +21,16 @@ public class Hand extends Card {
     public ArrayList<Card> getHand() {
         return hand;
     }
+
+    public int getSize() {
+        return hand.size();
+    }
+
+    public int sumTotal() {
+        int sum = 0;
+        for (int i = 0; i < hand.size(); i++) {
+            sum += hand.get(i).getNumber();
+        }
+        return sum;
+    }
 }
