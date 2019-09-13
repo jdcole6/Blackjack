@@ -1,7 +1,6 @@
 package app.jackdcole.controller;
 
 import app.jackdcole.deck.Deck;
-import app.jackdcole.deck.Hand;
 
 public class MainGameController {
 
