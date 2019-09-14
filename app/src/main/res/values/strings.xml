@@ -2,7 +2,6 @@
     <string name="app_name">Blackjack</string>
 
     <string name="title_activity_blackjack_game">BlackjackGameActivity</string>
-    <string name="dummy_content">BLACKJACK</string>
     <string name="standButton">STAND</string>
     <string name="hitButton">HIT</string>
     <string name="doubleDownButton">DOUBLE DOWN</string>
